@@ -1,0 +1,250 @@
+[
+  {
+    "Source": "locations2.csv",
+    "Destination": "locations",
+    "Mapping": {
+      "type": "TabularTranslator",
+      "mappings": [
+        {
+          "source": {
+            "name": "id",
+            "type": "String",
+            "physicalType": "String"
+          },
+          "sink": {
+            "name": "id",
+            "physicalType": "integer"
+          }
+        },
+        {
+          "source": {
+            "name": "organization_id",
+            "type": "String",
+            "physicalType": "String"
+          },
+          "sink": {
+            "name": "organization_id",
+            "physicalType": "integer"
+          }
+        },
+        {
+          "source": {
+            "name": "accessibility",
+            "type": "String",
+            "physicalType": "String"
+          },
+          "sink": {
+            "name": "accessibility",
+            "physicalType": "string"
+          }
+        },
+        {
+          "source": {
+            "name": "admin_emails",
+            "type": "String",
+            "physicalType": "String"
+          },
+          "sink": {
+            "name": "admin_emails",
+            "physicalType": "string"
+          }
+        },
+        {
+          "source": {
+            "name": "alternate_name",
+            "type": "String",
+            "physicalType": "String"
+          },
+          "sink": {
+            "name": "alternate_name",
+            "physicalType": "string"
+          }
+        },
+        {
+          "source": {
+            "name": "description",
+            "type": "String",
+            "physicalType": "String"
+          },
+          "sink": {
+            "name": "description",
+            "physicalType": "string"
+          }
+        },
+        {
+          "source": {
+            "name": "email",
+            "type": "String",
+            "physicalType": "String"
+          },
+          "sink": {
+            "name": "email",
+            "physicalType": "string"
+          }
+        },
+        {
+          "source": {
+            "name": "location_name",
+            "type": "String",
+            "physicalType": "String"
+          },
+          "sink": {
+            "name": "location_name",
+            "physicalType": "string"
+          }
+        },
+        {
+          "source": {
+            "name": "manager_name",
+            "type": "String",
+            "physicalType": "String"
+          },
+          "sink": {
+            "name": "manager_name",
+            "physicalType": "string"
+          }
+        }
+      ],
+      "typeConversion": true,
+      "typeConversionSettings": {
+        "allowDataTruncation": true,
+        "treatBooleanAsNumber": false
+      }
+    }
+  },
+  {
+    "Source": "phones.csv",
+    "Destination": "phones",
+    "Mapping": {
+      "type": "TabularTranslator",
+      "mappings": [
+        {
+          "source": {
+            "name": "id",
+            "type": "String",
+            "physicalType": "String"
+          },
+          "sink": {
+            "name": "id",
+            "physicalType": "integer"
+          }
+        },
+        {
+          "source": {
+            "name": "contact_id",
+            "type": "String",
+            "physicalType": "String"
+          },
+          "sink": {
+            "name": "contact_id",
+            "physicalType": "integer"
+          }
+        },
+        {
+          "source": {
+            "name": "location_id",
+            "type": "String",
+            "physicalType": "String"
+          },
+          "sink": {
+            "name": "location_id",
+            "physicalType": "integer"
+          }
+        },
+        {
+          "source": {
+            "name": "organization_id",
+            "type": "String",
+            "physicalType": "String"
+          },
+          "sink": {
+            "name": "organization_id",
+            "physicalType": "integer"
+          }
+        },
+        {
+          "source": {
+            "name": "service_id",
+            "type": "String",
+            "physicalType": "String"
+          },
+          "sink": {
+            "name": "service_id",
+            "physicalType": "integer"
+          }
+        },
+        {
+          "source": {
+            "name": "country_prefix",
+            "type": "String",
+            "physicalType": "String"
+          },
+          "sink": {
+            "name": "country_prefix",
+            "physicalType": "string"
+          }
+        },
+        {
+          "source": {
+            "name": "department",
+            "type": "String",
+            "physicalType": "String"
+          },
+          "sink": {
+            "name": "department",
+            "physicalType": "string"
+          }
+        },
+        {
+          "source": {
+            "name": "extension",
+            "type": "String",
+            "physicalType": "String"
+          },
+          "sink": {
+            "name": "extension",
+            "physicalType": "string"
+          }
+        },
+        {
+          "source": {
+            "name": "number",
+            "type": "String",
+            "physicalType": "String"
+          },
+          "sink": {
+            "name": "number",
+            "physicalType": "string"
+          }
+        },
+        {
+          "source": {
+            "name": "number_type",
+            "type": "String",
+            "physicalType": "String"
+          },
+          "sink": {
+            "name": "number_type",
+            "physicalType": "string"
+          }
+        },
+        {
+          "source": {
+            "name": "vanity_number",
+            "type": "String",
+            "physicalType": "String"
+          },
+          "sink": {
+            "name": "vanity_number",
+            "physicalType": "string"
+          }
+        }
+      ],
+      "typeConversion": true,
+      "typeConversionSettings": {
+        "allowDataTruncation": true,
+        "treatBooleanAsNumber": false
+      }
+    }
+  }
+]
